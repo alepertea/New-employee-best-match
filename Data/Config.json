@@ -1,0 +1,186 @@
+{
+  "jobsFolder": {
+    "name": "Data/JobApplications/",
+    "description": "Main folder used to create job specific folders to store CVs."
+  },
+  "candidateReportFile": {
+    "name": "Data/Candidates_Report.xlsx",
+    "description": "Excel file used to write candidate's report for all job applications."
+  },
+  "exceptionsFile": {
+    "name": "Data/BusinessExceptions.xlsx",
+    "description": "Used to log all business exceptions."
+  },
+  "numberOfCandidates": {
+    "name": 10,
+    "description": "Used to keep only the first X candidates."
+  },
+  "fitnessThreshold": {
+    "name": 10,
+    "description": "Candidates with fitness less than set value are not kept."
+  },
+  "exportsFile": {
+    "name": "Data/Exports/All_Candidates.xlsx",
+    "description": "Output folder for exported data."
+  },
+  "emailSubject": {
+    "name": "Job Application",
+    "description": "This string will be used to filter the emails extracted. Only emails containing this string will be processed."
+  },
+  "userEmail": {
+    "name": "alexandra.pertea@stud.ubbcluj.ro",
+    "description": "This account is used to send and receive Outlook emails."
+  },
+  "reportEmailSubject": {
+    "name": "Candidate's report.",
+    "description": "Subject used to send email with candidate's report."
+  },
+  "ApiKey": {
+    "name": "NewEmployeeBestMatch_APIKey",
+    "description": "API Key used for Document Understanding Framework."
+  },
+  "orchestratorFolderPath": {
+    "name": "NewEmployeeBestMatch",
+    "description": "Folder in Orchestrator used for the API Key."
+  },
+  "classifierLearningFilePath": {
+    "name": "DocumentProcessing/IntelligentKeywordLearningFile.json",
+    "description": "Learning file path used for classifier."
+  },
+  "classificationEndpoint": {
+    "name": "https://du.uipath.com/svc/intelligentkeywords",
+    "description": "Classification Endpoint for Intelligent Keyword Classifier."
+  },
+  "extractionEndpoint": {
+    "name": "https://du.uipath.com/svc/formextractor",
+    "description": "URL to UiPath server for Form Extractor."
+  },
+  "alwaysValidateClassification": {
+    "name": "True",
+    "description": "If set to True, classification will always go through manual validation."
+  },
+  "skipClassifierTraining": {
+    "name": "False",
+    "description": "If set to True, classifier training will not be performed."
+  },
+  "skipExtractorTraining": {
+    "name": "False",
+    "description": "If set to True, extractor training will not be performed."
+  },
+  "alwaysValidateExtraction": {
+    "name": "True",
+    "description": "If set to True, extracted data will always go through manual validation."
+  },
+  "retryInterval": {
+    "name": 30,
+    "description": "Duration, in seconds, between re-execution attempts."
+  },
+  "maxExecutionAttempts": {
+    "name": 2,
+    "description": "Maximum number of execution attempts. Minimum value is 1."
+  },
+  "logMessage_EmailProcessingStarted": {
+    "name": "Email processing started.",
+    "description": "Log message used to trace the process' steps."
+  },
+  "logMessage_EmailProcessingEnded": {
+    "name": "Email processing ended. Number of emails processed: ",
+    "description": "Log message used to trace the process' steps."
+  },
+  "logMessage_FolderProcessingStarted": {
+    "name": "Starting processing for folder: ",
+    "description": "Log message used to trace the process' steps."
+  },
+  "logMessage_DigitizationStarted": {
+    "name": "Digitization starts for: ",
+    "description": "Log message used to trace the entry of Digitize.xaml workflow."
+  },
+  "logMessage_DigitizationFinished": {
+    "name": "Digitization finished.",
+    "description": "Log message used to trace the end of the Digitize.xaml workflow."
+  },
+  "logMessage_ClassificationStarted": {
+    "name": "Classification starts for: ",
+    "description": "Log message used to trace the entry of Classify.xaml workflow."
+  },
+  "logMessage_AutoClassificationResults": {
+    "name": "Classification results: ",
+    "description": "Log message used to trace the end of the Classify.xaml workflow."
+  },
+  "logMessage_ClassificationBusinessRuleValidationStart": {
+    "name": "Classification business rule validation starts for: ",
+    "description": "Log message used to trace the entry of ClassificationBusinessRuleValidation.xaml workflow."
+  },
+  "logMessage_DataExtractionStarted": {
+    "name": "Data extraction starts for: ",
+    "description": "Log message used to trace the entry of Extract.xaml workflow."
+  },
+  "logMessage_ExtractionBusinessRuleValidationStart": {
+    "name": "Data extraction business rule validation starts for: ",
+    "description": "Log message used to trace the entry of ExtractionBusinessRuleValidation.xaml workflow."
+  },
+  "logMessage_DataExportStart": {
+    "name": "Data export starts for: ",
+    "description": "Log message used to trace the entry of Export.xaml workflow."
+  },
+  "logMessage_ShowClassificationStation": {
+    "name": "Presenting Classification Station.",
+    "description": "Log message used to trace the entry of the classification station step."
+  },
+  "logMessage_ResumeAfterClassificationValidation": {
+    "name": "Resuming after classification validation action #{0}. Document(s) classified as: {1}",
+    "description": "Log message used to trace the exit of the classification validation."
+  },
+  "logMessage_ProcessCandidatesStart": {
+    "name": "Processing all candidates...",
+    "description": "Log message used to trace the entry of the ProcessCandidates.xaml workflow."
+  },
+  "logMessage_ProcessCandidatesEnd": {
+    "name": "All candidates processed!",
+    "description": "Log message used to trace the end of the ProcessCandidates.xaml workflow."
+  },
+  "logMessage_ShowValidationStation": {
+    "name": "Presenting Validation Station for: ",
+    "description": "Log message used to trace the start of data validation."
+  },
+  "logMessage_ResumeAfterDataValidation": {
+    "name": "Resuming after data validation action #{0}. Document: {1}",
+    "description": "Log message used to trace the end of data validation."
+  },
+  "logMessage_DataExportFinished": {
+    "name": "Data exported to: ",
+    "description": "Log message used to trace the end of an export."
+  },
+  "logMessage_DetermineFitnessStart": {
+    "name": "Determining fitness for: ",
+    "description": "Log message used to trace the entry of DetermineCandidateFitness.xaml workflow."
+  },
+  "logMessage_FitnessDetermined": {
+    "name": "Fitness computed: ",
+    "description": "Log message used to trace the end of DetermineCandidateFitness.xaml workflow."
+  },
+  "logMessage_ProcessJobSpecificCandidatesStart": {
+    "name": "Processing candidates for job: ",
+    "description": "Log message used to trace the entry of ProcessJobSpecificCandidates.xaml workflow."
+  },
+  "logMessage_SendEmailStart": {
+    "name": "Sending email to: ",
+    "description": "Log message used to trace the entry of SendEmail.xaml workflow."
+  },
+  "logMessage_SendEmailEnd": {
+    "name": "Email sent!",
+    "description": "Log message used to trace the end of SendEmail.xaml workflow."
+  },
+  "errorMessage_FitnessThreshold": {
+    "name": "Fitness threshold not passed for candidate: ",
+    "description": "Error message used when handling fitness business exception."
+  },
+  "errorMessage_AttachmentMissing": {
+    "name": "Missing attachment from: ",
+    "description": "Error message used when handling PDF missing business exception."
+  },
+  "exceptionEmailBody": {
+    "name": "Less than 10 candidates passed the criteria for application.",
+    "description": "Text used in email body in case less than 10 candidates passed."
+  }
+}
