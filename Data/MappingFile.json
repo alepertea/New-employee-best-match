@@ -1,0 +1,31 @@
+{
+  "Frontend Developer": {
+    "minimumExperience": {
+      "value": 2,
+      "fitness": 5
+    },
+    "skill": {
+      "value": "ReactJs",
+      "fitness": 10
+    },
+    "lastDesiredPosition": {
+      "value": "Junior",
+      "fitness": 5
+    }
+  },
+  "RPA Developer":
+  {
+    "minimumExperience": {
+      "value": 0,
+      "fitness": 6
+    },
+    "skill": {
+      "value": "UiPath",
+      "fitness": 3
+    },
+    "lastDesiredPosition": {
+      "value": "Intern",
+      "fitness": 2
+    }
+  }
+}
